@@ -295,6 +295,10 @@ h2 {
   color: white;
 }
 
+#anfrage-button {
+  background-color: var(--primary-color);
+}
+
 .impressionen-text {
   padding: 40px 20% 0 20%;
   text-align: center;

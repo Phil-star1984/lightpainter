@@ -5,9 +5,9 @@ import "./App.css";
 
 function App() {
   const handleClick = () => {
-    window.open(`mailto:info@phil-splash.de?subject=Portraitzeichnung "Portraits gegen Rechts"&body=Hallo Phil Splash, 
-
-    ich möchte bei der Aktion "Portraits gegen Rechts" mitmachen und ein Portrait erstellen lassen von: (hier bitte Vor- und Nachnamen einfügen und 1 od. 2 Bilder der Person mitschicken).`);
+    /* window.open(`mailto:info@phil-splash.de?subject=Unverbindliche Anfrage "Lightpainter"&body=Hallo Phil, ich möchte hiermit unverbindlich für ein Lightpainting für folgende Veranstaltung anfragen: (Eventtitel, Ort, Datum, Budget, etc.).`); */
+    window.location.href = `mailto:info@phil-splash.de?subject=Unverbindliche Anfrage "Lightpainter"&body=Hallo Phil, 
+    ich möchte hiermit unverbindlich für ein Lightpainting für folgende Veranstaltung anfragen: (Eventtitel, Ort, Datum, Budget, etc.).`;
   };
 
   return (
@@ -22,13 +22,13 @@ function App() {
               <a href="#aktion">Aktion</a>
             </li> */}
             <li>
-              <a href="#mitmachen">Mitmachen</a>
+              <a href="#mitmachen">Interaktive Lichtkunst</a>
             </li>
             <li>
               <a href="#portraits">Portraits</a>
             </li>
             <li>
-              <a href="#vernissage">Vernissage</a>
+              <a href="#vernissage">Events</a>
             </li>
             <li>
               <a href="#kuenstler">Der Künstler</a>
@@ -103,47 +103,52 @@ function App() {
           feiern möchten – wir sind hier, um jedes Detail zum Leuchten zu
           bringen.
         </p>
-        <button onClick={handleClick}>Hier unverbindliche Anfrage</button>
+        <button onClick={handleClick}>Jetzt unverbindlich anfragen</button>
       </section>
       <div className="split-section">
         <section id="portraits">
           <h2>Einzigartige Schnellzeichnungen mit WOW-Faktor</h2>
           <p>
-            Der 'Millionen Maler' Phil Splash zeichnet mit wenigen Linien
-            innerhalb von 2-3 Minuten individuelle Portraits, die als
-            Lichtprojektion an den Hausfassaden lebendig werden.
+            Der "Millionen Maler" Phil Splash zeichnet mit wenigen Linien
+            innerhalb von 2-3 Minuten individuelle Portraits der Gäste, die als
+            Lichtprojektion an Wänden und Häuserfassaden lebendig werden.
           </p>
         </section>
         {/* <div id="portraits-example"></div> */}
       </div>
       <section id="portraitvorschau"></section>
       <section id="vernissage">
-        <h2>Die Vernissage der Portraits</h2>
+        <h2>Einzigartige Erlebnisse für Ihre Marke</h2>
         <p>
-          Die Portraits werden gesammelt im Foyer des Rathauses Würzburg
-          gezeigt. Die Vernissage ist am Donnerstag, den 04.04.2024. Die
-          Ausstellung ist ab dem 04.04.24 bis zum 29.04.24 zu den regulären
-          Öffnungszeiten des Rathauses zu besuchen.
+          Lightpainter bietet mehr als nur eine Dienstleistung; wir schaffen ein
+          Erlebnis, das Ihre Gäste nie vergessen werden. Unsere Projekte sind
+          maßgeschneidert, um jede Veranstaltung spektakulär zu machen. Von der
+          ersten Skizze bis zur letzten Projektion arbeiten wir eng mit Ihnen
+          zusammen, um sicherzustellen, dass Ihre Vision perfekt umgesetzt wird.
+          Mit Lightpainter wählen Sie nicht nur einen Anbieter – Sie wählen
+          einen Partner, der Innovation und Kreativität auf Ihr Event bringt.
         </p>
         <div id="timings">
-          <h2 id="timings-wort">Timings</h2>
-          <h2>Zeichenaktion (online) | 01.03. - 31.04.2024</h2>
-          <h2>Vernissage Foyer Rathaus Würzburg | 04.04.2024 </h2>
-          <h2>Permanente Ausstellung | 04.04. - 29.04.2024</h2>
+          <h2 id="timings-wort">USPs für ihren Event</h2>
+          <h2>Einzigartiges interaktives Licht-Erlebnis für Zuschauer</h2>
+          <h2>Individuelle Portraits als Give-Aways für Kunden</h2>
+          <h2>
+            Einbinden von vielen Menschen in ein positives Licht-Spektakel
+          </h2>
         </div>
       </section>
       <section id="kuenstler">
         <div id="kuenstler-left-container">
           <h2>Der Künstler</h2>
           <p>
-            Phil Splash ist Künstler, Web Developer und Senior Art Director.
-            2015 hat er von der Presse den Titel „Der Millionen Maler“ erhalten.
-            Seit er 2010 damit begonnen hat, Portraits von Menschen in der
-            U-Bahn zu zeichnen, ist es sein Lebensziel, 1 Million Menschen zu
-            portraitieren. Er hat bereits über 300.000 Portraits gezeichnet und
-            Aktionen für Weltmarken wie Calvin Klein, Lavazza, MacCosmetics und
-            Siemens gestaltet. Über seine Aktionen wurde landesweit berichtet
-            (RTL, ZDF, Süddeutsche Zeitung, BILD).
+            Phil Splash ist Gründer von Lightpainter und Portrait-Künstler. Seit
+            er 2010 damit begonnen hat, Portraits von Menschen in der U-Bahn zu
+            zeichnen, ist es sein Lebensziel, 1 Million Menschen zu
+            portraitieren. 2015 hat er von der Presse den Titel „Der Millionen
+            Maler“ erhalten. Er hat bereits über 300.000 Portraits gezeichnet
+            und Aktionen für Weltmarken wie Calvin Klein, Lavazza, NFL,
+            MacCosmetics und Siemens gestaltet. Über seine Aktionen und Projekte
+            wurde landesweit berichtet (RTL, ZDF, Süddeutsche Zeitung, BILD).
           </p>
           <p>
             Link zur Künstler Website:{" "}
@@ -151,15 +156,7 @@ function App() {
               Phil-Splash.de
             </a>
           </p>
-          <p>
-            Link zum Main Post Artikel:{" "}
-            <a
-              href="https://www.mainpost.de/regional/wuerzburg/wuerzburger-kuenstler-zeichnet-portraets-gegen-hass-der-rechtsruck-in-der-gesellschaft-geht-mir-ziemlich-auf-den-keks-art-11420066"
-              target="_blank"
-            >
-              Main-Post
-            </a>
-          </p>
+
           <p>
             Link zur Marketing Angeboten des Künstlers:{" "}
             <a href="http://www.phil-splash.de/" target="_blank">
@@ -258,15 +255,18 @@ function App() {
         </section>
       </section>
       <section id="hinweis">
-        <h2>Hinweis</h2>
+        <h2>Starten Sie Ihr Lichtspektakel mit Lightpainter</h2>
         <p>
-          Der Künstler behält sich das Recht vor ungeeignete Bilder und Bilder
-          die gegen den Sinn der Aktion verstoßen von der Portraitaktion
-          auszuschließen bzw. ohne Angabe von Gründen auszusortieren und die
-          Anzahl der Portraits auf ein geeignetes Maß für die Vernissage zu
-          reduzieren. Für unerlaubte oder unrechtmäßige Einsendungen von
-          Bildmaterial erfolgt keine Haftung von Seiten des Künstlers.
+          Bereit, Ihre Veranstaltung in ein Kunstwerk zu verwandeln?
+          Kontaktieren Sie uns noch heute, um mehr darüber zu erfahren, wie
+          Lightpainter Ihr nächstes Event unvergesslich machen kann. Egal, ob
+          Sie eine Unternehmensfeier planen oder den schönsten Tag Ihres Lebens
+          feiern möchten – wir sind hier, um jedes Detail zum Leuchten zu
+          bringen.
         </p>
+        <button id="anfrage-button" onClick={handleClick}>
+          Jetzt unverbindlich anfragen
+        </button>
       </section>
       <section id="impressum">
         <h1>Impressum</h1>
