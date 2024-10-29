@@ -53,18 +53,21 @@ function App() {
         </div>
       </section>
       <section id="aktion">
-        <h2>Lightpainter - A unique interactive Light Art performance</h2>
+        <h2>
+          Lightpainter - Einzigartig <mark> interaktive </mark> Kunst im
+          Großformat
+        </h2>
         <p>
-          Transform your corporate events with Lightpainter’s unique live
-          portrait projections. Captivate guests as we turn any venue into a
-          vibrant art gallery, projecting custom, real-time portraits onto walls
-          and buildings.
+          Bringen Sie Ihr Event mit Lightpainter zum Strahlen! Wir verwandeln
+          jede Oberfläche in eine lebendige Leinwand, indem wir atemberaubende
+          Licht-Portraits und animierte Firmenlogos mit einem
+          Hochleistungs-Beamer von bis zu 7000 ANSI Lumen projizieren.
         </p>
         <p>
-          Our service offers a memorable, interactive art experience that
-          enhances branding, engages audiences, and creates lasting impressions
-          at corporate functions, product launches, and company celebrations.
-          Ideal for businesses looking to make a bold, creative statement.
+          Perfekt für Firmenveranstaltungen, Corporate Events, Branding Events
+          und magische Hochzeiten. Lassen Sie Ihre Marke großflächig erstrahlen
+          – mit Kunstwerken, die von niemand Geringerem als dem Münchner
+          "Millionen Maler" Phil Splash erstellt werden.
         </p>
         <iframe
           width="560"
@@ -81,31 +84,34 @@ function App() {
       </section>
 
       <section id="mitmachen">
-        <h2>Wie kann ich mitmachen?</h2>
+        <h2>Individuelle Lichtkunst für jeden Anlass</h2>
         <p>
-          Du kannst innerhalb von wenigen Sekunden teilnehmen. Schicke ein Foto
-          von der Person, die gezeichnet werden soll, sowie den Vor- und
-          Nachnamen an info@phil-splash.de oder klicke unten auf den Button.
+          Ob eine beeindruckende Firmenfeier, eine unvergessliche Hochzeit oder
+          ein einzigartiges Branding-Event, Lightpainter macht Ihre
+          Veranstaltung zum visuellen Highlight. Unsere Dienstleistungen
+          umfassen die Projektion von hochauflösenden, personalisierten
+          Portraits und die Animation von Firmenlogos auf Fassaden oder Gebäuden
+          mit einer Breite von bis zu 12 Metern. Erleben Sie, wie Ihre Marke
+          oder Ihr besonderer Moment in neuem Licht erstrahlt und die Blicke
+          aller Anwesenden fesselt.
         </p>
         <p>
-          Daraufhin zeichnet der Künstler das Portrait, und es wird am Tag der
-          Vernissage im Rathaus Würzburg ausgestellt. Die Teilnahme bei der
-          Aktion ist kostenlos; wer möchte, kann das Portrait auch direkt nach
-          der Ausstellung kaufen. Starte jetzt! Lass von dir oder einer
-          geliebten Person ein Portrait anfertigen und setze ein Symbol für die
-          Vielfalt und gegen Rechts.
+          Bereit, Ihre Veranstaltung in ein Kunstwerk zu verwandeln?
+          Kontaktieren Sie uns noch heute, um mehr darüber zu erfahren, wie
+          Lightpainter Ihr nächstes Event unvergesslich machen kann. Egal, ob
+          Sie eine Unternehmensfeier planen oder den schönsten Tag Ihres Lebens
+          feiern möchten – wir sind hier, um jedes Detail zum Leuchten zu
+          bringen.
         </p>
-        <button onClick={handleClick}>Portraitvorlage hier senden</button>
+        <button onClick={handleClick}>Hier unverbindliche Anfrage</button>
       </section>
       <div className="split-section">
         <section id="portraits">
-          <h2>Einzigartige Portraits mit Inhalt</h2>
+          <h2>Einzigartige Schnellzeichnungen mit WOW-Faktor</h2>
           <p>
-            Das Einzigartige an den Portraits ist, dass sie auf Paragraph 1 des
-            Deutschen Grundgesetzes als Hintergrund gezeichnet werden und somit
-            zu einem individuellen Symbol für Toleranz und Vielfalt werden. Das
-            Format beträgt A3 (297 x 420 mm), wodurch die Portraits problemlos
-            aufgehängt werden können.
+            Der 'Millionen Maler' Phil Splash zeichnet mit wenigen Linien
+            innerhalb von 2-3 Minuten individuelle Portraits, die als
+            Lichtprojektion an den Hausfassaden lebendig werden.
           </p>
         </section>
         {/* <div id="portraits-example"></div> */}
@@ -353,10 +359,7 @@ function App() {
         </div>
       </section>
       <footer>
-        <p>
-          © 2024 Millionpainter | Portraits gegen Rechts. Alle Rechte
-          vorbehalten.
-        </p>
+        <p>© 2024 Millionpainter | Alle Rechte vorbehalten.</p>
       </footer>
     </>
   );

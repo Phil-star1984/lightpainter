@@ -120,7 +120,7 @@ header nav ul li a {
   margin-top: 90px;
   height: 700px;
   background-color: red;
-  background-image: url("/lightpainter_website_keyvisual_1920x1080.jpg"); /*  The image used */
+  background-image: url("/lightpainter_website_keyvisual3_1920x1080.jpg"); /*  The image used */
   background-position: center; /* Adjust the horizontal position */
   background-repeat: no-repeat;
   background-size: cover;
@@ -215,7 +215,7 @@ h2 {
 #portraitvorschau {
   height: 600px;
   padding: 0 20%;
-  background-image: url("/public/millionpainter_pgr_portraits.jpg");
+  background-image: url("/lightpainter_website_portraitvorschau_1920x900.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -223,7 +223,7 @@ h2 {
 
 #vernissage {
   padding: 40px 20%;
-  background-color: red;
+  background-color: var(--primary-color);
 }
 
 #timings {
@@ -278,7 +278,7 @@ h2 {
   justify-content: center;
   align-items: center;
   /* background-color: rgb(255, 0, 255); */
-  background-image: url("/Millionpainter_GegenRechts_AusstellungsVisual_03.jpg"); /* The image used */
+  background-image: url("/lightpainter_website_ausstellungcontainer_1920x1080.jpg"); /* The image used */
   background-position: center; /* Adjust the horizontal position */
   background-repeat: no-repeat;
   background-size: cover;
@@ -286,7 +286,7 @@ h2 {
 }
 
 #impressionen {
-  background-color: red;
+  background-color: var(--primary-color);
 }
 
 #hinweis {
@@ -331,7 +331,7 @@ button:hover {
 }
 
 footer {
-  background-color: red;
+  background-color: var(--primary-color);
   color: white;
   text-align: center;
   padding: 20px 0;
