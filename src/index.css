@@ -82,6 +82,13 @@ body {
 
 #title h1 {
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightpainter_logo {
+  width: 23px;
 }
 
 header {
@@ -345,7 +352,6 @@ h2 {
   /* padding-bottom: 0; */
 }
 
-
 button {
   background-color: rgb(0, 0, 0);
   color: white;
@@ -382,7 +388,10 @@ footer {
   }
 
   #title {
-    width: 30%;
+    width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: start;
   }
 
   #title h1 {
@@ -432,18 +441,15 @@ footer {
   #portraitvorschau {
     height: 400px;
     padding: 0 10%;
-  
   }
   iframe {
     width: 100%;
-
   }
 
   #vernissage {
     padding: 40px 10%;
     color: white;
   }
-
 
   #kuenstler {
     padding: 40px 10%;

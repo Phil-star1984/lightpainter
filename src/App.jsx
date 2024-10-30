@@ -2,6 +2,7 @@
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg"; */
 import "./App.css";
+import LightpainterIcon from "./assets/logo_blue.svg";
 
 function App() {
   const handleClick = () => {
@@ -14,7 +15,11 @@ function App() {
     <>
       <header>
         <div id="title">
-          <h1>LIGHTPAINTER</h1>
+          <h1>
+            LIGHT
+            <img class="lightpainter_logo" src={LightpainterIcon} alt="Lightpainter Logo Blitz"/>
+            PAINTER
+          </h1>
         </div>
         <nav>
           <ul>
