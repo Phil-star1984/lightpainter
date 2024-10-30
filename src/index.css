@@ -72,6 +72,7 @@ button:focus-visible {
 
 :root {
   --primary-color: rgb(130, 0, 230);
+  --secondary-color: rgb(230, 197, 255);
 }
 
 body {
@@ -190,8 +191,17 @@ h2 {
 
 #mitmachen {
   padding: 40px 20%;
+  color: var(--secondary-color);
   padding-bottom: 0;
   background-color: var(--primary-color);
+}
+
+#mitmachen h2 {
+  color: white;
+}
+
+#anfrage-button-negativ {
+  background-color: rgb(0, 153, 255);
 }
 
 .split-section {
@@ -201,8 +211,14 @@ h2 {
 
 #portraits {
   padding-top: 40px;
+  color: var(--secondary-color);
   padding-bottom: 40px;
 }
+
+#portraits h2 {
+  color: white;
+}
+
 #portraits-example {
   height: 400px;
   background-image: url("/public/millionpainter_pgr_portraits.jpg");
@@ -277,7 +293,6 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: rgb(255, 0, 255); */
   background-image: url("/lightpainter_website_ausstellungcontainer_1920x1080.jpg"); /* The image used */
   background-position: center; /* Adjust the horizontal position */
   background-repeat: no-repeat;
@@ -285,8 +300,33 @@ h2 {
   padding: 0 20%;
 }
 
-#impressionen {
+#gallery {
+  text-align: center;
+  padding: 40px 10%;
+  padding-bottom: 70px;
   background-color: var(--primary-color);
+}
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+#gallery h2 {
+  color: white;
+}
+
+.grid-gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.grid-gallery img:hover {
+  transform: scale(1.05);
 }
 
 #hinweis {
@@ -305,18 +345,6 @@ h2 {
   /* padding-bottom: 0; */
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 5px;
-  padding-bottom: 40px;
-}
-
-.gallery__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 button {
   background-color: rgb(0, 0, 0);
@@ -403,21 +431,19 @@ footer {
 
   #portraitvorschau {
     height: 400px;
-    padding: 0 20%;
-    background-image: url("/public/millionpainter_pgr_portraits.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 0 10%;
+  
+  }
+  iframe {
+    width: 100%;
+
   }
 
   #vernissage {
     padding: 40px 10%;
+    color: white;
   }
 
-  #timings {
-    /* background-color: black; */
-    /* background-color: rgba(0, 0, 0, 0.4); */
-  }
 
   #kuenstler {
     padding: 40px 10%;

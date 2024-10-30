@@ -54,7 +54,7 @@ function App() {
       </section>
       <section id="aktion">
         <h2>
-          Lightpainter - Einzigartig <mark> interaktive </mark> Kunst im
+          Lightpainter - Einzigartige <mark>interaktive Lichtkunst</mark> im
           Großformat
         </h2>
         <p>
@@ -72,9 +72,11 @@ function App() {
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube.com/watch?v=_04IGBaICb4"
+          src="https://www.youtube.com/embed/_04IGBaICb4?si=TzMXxBotSObPuD39"
+          title="YouTube video player"
           frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
       </section>
@@ -103,7 +105,9 @@ function App() {
           feiern möchten – wir sind hier, um jedes Detail zum Leuchten zu
           bringen.
         </p>
-        <button onClick={handleClick}>Jetzt unverbindlich anfragen</button>
+        <button id="anfrage-button-negativ" onClick={handleClick}>
+          Jetzt unverbindlich anfragen
+        </button>
       </section>
       <div className="split-section">
         <section id="portraits">
@@ -202,58 +206,21 @@ function App() {
         </div>
       </section>
 
-      <section id="impressionen">
-        <div className="impressionen-text">
-          <h1>Impressionen</h1>
+      <section id="gallery">
+        <h2>Impressionen</h2>
+        <div className="grid-gallery">
+          <img src="/lightpainter_website_gallery_01.jpg" alt="Bild 1" />
+          <img src="/lightpainter_website_gallery_02.jpg" alt="Bild 2" />
+          <img src="/lightpainter_website_gallery_03.jpg" alt="Bild 3" />
+          <img src="/lightpainter_website_gallery_05.jpg" alt="Bild 4" />
+          <img src="/lightpainter_website_gallery_07.jpg" alt="Bild 1" />
+          <img src="/lightpainter_website_gallery_11.jpg" alt="Bild 2" />
         </div>
-        <section id="impressionen-gallery" className="gallery">
-          <figure className="gallery__item gallery__item--1">
-            <img
-              src="https://res.cloudinary.com/hzwebux5t/image/upload/v1573164242/uvncyxayeu1fyek7btfy.jpg"
-              className="gallery__img"
-              alt="Image 1"
-            />
-          </figure>
-          <figure className="gallery__item gallery__item--2">
-            <img
-              src="https://www.wuerzburgerleben.de/wp-content/uploads/sites/10/2020/01/Phil-Splash_Zeichnung_Bar.jpg"
-              className="gallery__img"
-              alt="Image 2"
-            />
-          </figure>
-          <figure className="gallery__item gallery__item--3">
-            <img
-              src="https://res.cloudinary.com/hzwebux5t/image/upload/c_fill,dpr_2.0,f_auto,g_auto,h_360,w_500/v1635189404/fgejp6iayeqfhlsi7mu0.jpg"
-              className="gallery__img"
-              alt="Image 3"
-            />
-          </figure>
-          <figure className="gallery__item gallery__item--4">
-            <img
-              src="https://www.wuerzburgerleben.de/wp-content/uploads/sites/10/2020/01/Collage_Phil-Splash.jpg"
-              className="gallery__img"
-              alt="Image 4"
-            />
-          </figure>
-          <figure className="gallery__item gallery__item--5">
-            <img
-              src="https://www.wuerzburgerleben.de/wp-content/uploads/sites/10/2020/01/TheMillionPainter_Stachuspassagen_Muenchen.jpg"
-              className="gallery__img"
-              alt="Image 5"
-            />
-          </figure>
-          <figure className="gallery__item gallery__item--6">
-            <img
-              src="https://www.wuerzburgerleben.de/wp-content/uploads/sites/10/2020/01/Phil-Splash_Malen_U-Bahn_Muenchen.jpg"
-              className="gallery__img"
-              alt="Image 6"
-            />
-          </figure>
-        </section>
-        <section id="ausstellung-visual">
-          <div id="ausstellung-container">{/* <h1>PHIL SKETCHING</h1> */}</div>
-        </section>
       </section>
+      <section id="ausstellung-visual">
+        <div id="ausstellung-container">{/* <h1>PHIL SKETCHING</h1> */}</div>
+      </section>
+
       <section id="hinweis">
         <h2>Starten Sie Ihr Lichtspektakel mit Lightpainter</h2>
         <p>
