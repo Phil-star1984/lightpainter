@@ -17,7 +17,11 @@ function App() {
         <div id="title">
           <h1>
             LIGHT
-            <img class="lightpainter_logo" src={LightpainterIcon} alt="Lightpainter Logo Blitz"/>
+            <img
+              class="lightpainter_logo"
+              src={LightpainterIcon}
+              alt="Lightpainter Logo Blitz"
+            />
             PAINTER
           </h1>
         </div>
@@ -74,16 +78,25 @@ function App() {
           – mit Kunstwerken, die von niemand Geringerem als dem Münchner
           "Millionen Maler" Phil Splash erstellt werden.
         </p>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/_04IGBaICb4?si=TzMXxBotSObPuD39"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+        <div id="lightpainter-videos">
+          <iframe
+            id="left-video"
+            src="https://www.youtube.com/embed/_04IGBaICb4?si=TzMXxBotSObPuD39"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/fOSJcEkOWxQ?si=ZJeKheQSXPdrO7ZQ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
       </section>
 
       <section id="sketching-visual">
